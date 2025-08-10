@@ -1,8 +1,12 @@
 #ifndef __GUI_PAINT_H
 #define __GUI_PAINT_H
 
-#include "RGBMatrix_device.h"
 #include "../Fonts/fonts.h"
+
+#include <stdint.h>
+typedef uint8_t  UBYTE;
+typedef uint16_t UWORD;
+typedef uint32_t UDOUBLE;
 
 /**
  * Image attributes
@@ -147,7 +151,7 @@ void Paint_DrawBitMap_Block(const unsigned char* image_buffer, UBYTE Region);
 void Paint_DrawImage(const unsigned char *image, UWORD xStart, UWORD yStart, UWORD W_Image, UWORD H_Image) ;
 void Paint_DrawImage1(const unsigned char *image, UWORD xStart, UWORD yStart, UWORD W_Image, UWORD H_Image);
  void Paint_BmpWindows(unsigned char x,unsigned char y,const unsigned char *pBmp,\
-					unsigned char chWidth,unsigned char chHeight);
+                    unsigned char chWidth,unsigned char chHeight);
 
 
 #endif

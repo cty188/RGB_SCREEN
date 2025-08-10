@@ -39,7 +39,7 @@
 #include <stdint.h>
 #include <stdlib.h>
 #include <string.h>
-#include "fonts.h"
+#include "../Fonts/fonts.h"
 #include "stm32h7xx_hal.h"
 
 
