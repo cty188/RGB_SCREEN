@@ -131,7 +131,7 @@ int main(void)
       Paint_DrawLine(x, 0, x, 64, Wheel(x), DOT_PIXEL_1X1, LINE_STYLE_SOLID);
   }
   HUB75_show(); // 刷新显示屏
-  HAL_Delay(10000); // 延时 1 秒
+  HAL_Delay(1000); // 延时 1 秒
 
   // 清屏后绘制十字和圆点
   Paint_Clear(BLACK);
